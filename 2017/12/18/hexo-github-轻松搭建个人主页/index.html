@@ -79,13 +79,19 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="ltnq">
-<meta property="og:url" content="https://nq117.github.io/index.html">
+<meta name="description" content="http://blog.csdn.net/qq_28844947 synchronize()  同步代码块同步函数所使用的锁就是this锁static所使用的锁就是该类的字节码文件对象 类名.class//懒汉式：延迟加载方式。当多线程访问懒汉式时，因为懒汉式的方法内对共性数据进行多条语句的操作。所以容易出现线程安全问题。为了解决，加入同步机制，解决安全问题。但是却带来了效率降低。为了效率问题，通">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo + github  轻松搭建个人主页">
+<meta property="og:url" content="https://nq117.github.io/2017/12/18/hexo-github-轻松搭建个人主页/index.html">
 <meta property="og:site_name" content="ltnq">
+<meta property="og:description" content="http://blog.csdn.net/qq_28844947 synchronize()  同步代码块同步函数所使用的锁就是this锁static所使用的锁就是该类的字节码文件对象 类名.class//懒汉式：延迟加载方式。当多线程访问懒汉式时，因为懒汉式的方法内对共性数据进行多条语句的操作。所以容易出现线程安全问题。为了解决，加入同步机制，解决安全问题。但是却带来了效率降低。为了效率问题，通">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://note.youdao.com/yws/public/resource/5229efa48581692148036d65b94e79db/xmlnote/8E9DAB372F92440EAC1406B8D163F3C9/1394">
+<meta property="og:updated_time" content="2017-12-18T08:21:05.738Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ltnq">
+<meta name="twitter:title" content="hexo + github  轻松搭建个人主页">
+<meta name="twitter:description" content="http://blog.csdn.net/qq_28844947 synchronize()  同步代码块同步函数所使用的锁就是this锁static所使用的锁就是该类的字节码文件对象 类名.class//懒汉式：延迟加载方式。当多线程访问懒汉式时，因为懒汉式的方法内对共性数据进行多条语句的操作。所以容易出现线程安全问题。为了解决，加入同步机制，解决安全问题。但是却带来了效率降低。为了效率问题，通">
+<meta name="twitter:image" content="https://note.youdao.com/yws/public/resource/5229efa48581692148036d65b94e79db/xmlnote/8E9DAB372F92440EAC1406B8D163F3C9/1394">
 
 
 
@@ -115,13 +121,13 @@
 
 
 
-  <link rel="canonical" href="https://nq117.github.io/"/>
+  <link rel="canonical" href="https://nq117.github.io/2017/12/18/hexo-github-轻松搭建个人主页/"/>
 
 
 
 
 
-  <title>ltnq</title>
+  <title>hexo + github  轻松搭建个人主页 | ltnq</title>
   
 
 
@@ -140,8 +146,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -214,9 +219,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -246,9 +251,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/12/18/hexo-github-轻松搭建个人主页/" itemprop="url">hexo + github  轻松搭建个人主页</a></h1>
+          <h1 class="post-title" itemprop="name headline">hexo + github  轻松搭建个人主页</h1>
         
 
         <div class="post-meta">
@@ -298,9 +301,7 @@
       
 
       
-        
-          
-            <p><a href="http://blog.csdn.net/qq_28844947" target="_blank" rel="noopener">http://blog.csdn.net/qq_28844947</a></p>
+        <p><a href="http://blog.csdn.net/qq_28844947" target="_blank" rel="noopener">http://blog.csdn.net/qq_28844947</a></p>
 <p>synchronize()  同步代码块<br>同步函数所使用的锁就是this锁<br>static所使用的锁就是该类的字节码文件对象 类名.class<br>//懒汉式：延迟加载方式。<br>当多线程访问懒汉式时，因为懒汉式的方法内对共性数据进行多条语句的操作。所以容易出现线程安全问题。为了解决，加入同步机制，解决安全问题。但是却带来了效率降低。<br>为了效率问题，通过双重判断的形式解决。<br>class Single{<br>    private static Single s = null;<br>    private Single(){}<br>    public static Single getInstance(){ //锁是谁？字节码文件对象；<br>        if(s == null){<br>            synchronized(Single.class){<br>                if(s == null)<br>                    s = new Single();<br>            }<br>        }<br>        return s;<br>    }<br>}</p>
 <p> Android  中 的 异 步 消 息 处 理 主 要 由 四 个 部 分 组 成 ， Message 、 Handler 、 </p>
 <pre><code>MessageQueue 和 Looper。
@@ -422,8 +423,6 @@ AsyncTask 的第一个泛型参数指定为 Void，表示在执行 AsyncTask 的
                         }  
  }
 </code></pre>
-          
-        
       
     </div>
     
@@ -440,131 +439,28 @@ AsyncTask 的第一个泛型参数指定为 Void，表示在执行 AsyncTask 的
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://nq117.github.io/2017/12/18/hello/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="ltnq">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ltnq">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/12/18/hello/" itemprop="url">hello</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-18T13:42:15+08:00">
-                2017-12-18
-              </time>
+              <a href="/2017/12/18/hello/" rel="next" title="hello">
+                <i class="fa fa-chevron-left"></i> hello
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -574,138 +470,11 @@ AsyncTask 的第一个泛型参数指定为 Void，表示在执行 AsyncTask 的
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://nq117.github.io/2017/12/18/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="ltnq">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ltnq">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/12/18/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-18T13:27:20+08:00">
-                2017-12-18
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
-        
+    <div class="post-spread">
       
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
@@ -713,6 +482,10 @@ AsyncTask 的第一个泛型参数指定为 Void，表示在执行 AsyncTask 的
 
 
           
+
+  
+
+
 
         </div>
         
@@ -911,6 +684,10 @@ AsyncTask 的第一个泛型参数指定为 Void，表示在执行 AsyncTask 的
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
 
   
 
